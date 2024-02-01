@@ -48,7 +48,7 @@ pane_is_zoomed() {
 
 command_is_vim() {
   case "${1%% *}" in
-    (vi|?vi|vim*|?vim*|view|?view|vi??*)
+    (vi|?vi|vim*|?vim*|view|?view|vi??*|.hx-wrapped|helix)
       true
       ;;
     (*)
